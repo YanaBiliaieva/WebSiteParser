@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<offers>
+    <offer number="0">
+        <price>51,60€</price>
+        <initialPrice>129,00€</initialPrice>
+        <name>Jogg-Jeans</name>
+        <articleId>3688254</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="1">
+        <price>31,92€</price>
+        <initialPrice>39,90€</initialPrice>
+        <name>Jeans 'onsLOOM CAMP 03 L. BLUE EXP'</name>
+        <articleId>033667439</articleId>
+        <brand>Only &amp; Sons</brand>
+    </offer>
+    <offer number="2">
+        <price>52,43€</price>
+        <initialPrice>79,90€ 69,90€</initialPrice>
+        <name>Jeans 'Cash'</name>
+        <articleId>1166068</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="3">
+        <price>76,30€</price>
+        <initialPrice>139,00€ 109,00€</initialPrice>
+        <name>Jeans 'Slim Straight' mit Destroyed-Effekten</name>
+        <articleId>3653534</articleId>
+        <brand>Calvin Klein Jeans</brand>
+    </offer>
+    <offer number="4">
+        <price>83,40€</price>
+        <initialPrice>139,00€</initialPrice>
+        <name>Jeans 'SKINNY SIMON DYXLBDST'</name>
+        <articleId>3750217</articleId>
+        <brand>Tommy Jeans</brand>
+    </offer>
+    <offer number="5">
+        <price>52,43€</price>
+        <initialPrice>69,90€</initialPrice>
+        <name>Jeans 'JJITIM JJORIGINAL JJ 177'</name>
+        <articleId>1773751774</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="6">
+        <price>39,92€</price>
+        <initialPrice>49,90€</initialPrice>
+        <name>Jeans 'JJITIM JJORIGINAL GE 987 NOOS'</name>
+        <articleId>9873557880</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="7">
+        <price>79,92€</price>
+        <initialPrice>99,90€</initialPrice>
+        <name>Jeans 'Spike'</name>
+        <articleId>3689487</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="8">
+        <price>ab 63,92€</price>
+        <initialPrice>ab 79,90€</initialPrice>
+        <name>Slim Fit Jeans Tim Original JOS 819</name>
+        <articleId>8193464550</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="9">
+        <price>35,91€</price>
+        <initialPrice>59,90€ 39,90€</initialPrice>
+        <name>'Sonic' Jeans im Slim Fit</name>
+        <articleId>3734437</articleId>
+        <brand>CHEAP MONDAY</brand>
+    </offer>
+    <offer number="10">
+        <price>62,99€</price>
+        <initialPrice>69,99€</initialPrice>
+        <name>Denim Marvin Straight Jeans</name>
+        <articleId>3764204</articleId>
+        <brand>TOM TAILOR</brand>
+    </offer>
+    <offer number="11">
+        <price>75,92€</price>
+        <initialPrice>159,00€ 94,90€</initialPrice>
+        <name>Tapered fit Jeans 'Orange90-P'</name>
+        <articleId>903676481</articleId>
+        <brand>BOSS ORANGE</brand>
+    </offer>
+    <offer number="12">
+        <initialPrice/>
+        <name>Jeans 'JJIGLENN JJORIGINAL JOS 875 NOOS'</name>
+        <articleId>8751962106</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="13">
+        <price>69,00€</price>
+        <initialPrice>129,00€ 115,00€</initialPrice>
+        <name>'Tepphar' Jeans Skinny Fit 853T</name>
+        <articleId>8533708698</articleId>
+        <brand>DIESEL</brand>
+    </offer>
+    <offer number="14">
+        <price>39,92€</price>
+        <initialPrice>49,90€</initialPrice>
+        <name>Jeans Tight</name>
+        <articleId>3474652</articleId>
+        <brand>CHEAP MONDAY</brand>
+    </offer>
+    <offer number="15">
+        <price>77,40€</price>
+        <initialPrice>149,00€ 129,00€</initialPrice>
+        <name>Skinny-Jeans mit Biker-Details 'Hugo 734/42'</name>
+        <articleId>734423693283</articleId>
+        <brand>HUGO</brand>
+    </offer>
+    <offer number="16">
+        <price>95,20€</price>
+        <initialPrice>119,00€</initialPrice>
+        <name>Jeans 'Skim - Blue Drag Light'</name>
+        <articleId>3652394</articleId>
+        <brand>SCOTCH &amp; SODA</brand>
+    </offer>
+    <offer number="17">
+        <price>ab 77,59€</price>
+        <initialPrice>ab 96,99€</initialPrice>
+        <name>Jeans '3301 Loose'</name>
+        <articleId>33013688259</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="18">
+        <price>31,92€</price>
+        <initialPrice>39,90€</initialPrice>
+        <name>Jeans</name>
+        <articleId>3731286</articleId>
+        <brand>TOM TAILOR DENIM</brand>
+    </offer>
+    <offer number="19">
+        <price>53,99€</price>
+        <initialPrice>59,99€</initialPrice>
+        <name>Denim Piers Super Slim Jeans</name>
+        <articleId>3772657</articleId>
+        <brand>TOM TAILOR DENIM</brand>
+    </offer>
+    <offer number="20">
+        <price>40,41€</price>
+        <initialPrice>69,99€ 44,90€</initialPrice>
+        <name>'Piers' Super Slim</name>
+        <articleId>3694171</articleId>
+        <brand>TOM TAILOR DENIM</brand>
+    </offer>
+    <offer number="21">
+        <price>26,94€</price>
+        <initialPrice>69,90€ 44,90€</initialPrice>
+        <name>Jeans 'Super Slim PIERS green DNA'</name>
+        <articleId>3747227</articleId>
+        <brand>TOM TAILOR DENIM</brand>
+    </offer>
+    <offer number="22">
+        <price>ab 62,93€</price>
+        <initialPrice>ab 99,90€ ab 89,90€</initialPrice>
+        <name>Jeans 'NEWBILL'</name>
+        <articleId>3549206</articleId>
+        <brand>REPLAY</brand>
+    </offer>
+    <offer number="23">
+        <price>39,92€</price>
+        <initialPrice>49,90€</initialPrice>
+        <name>Jeans 'BIKER LT GREY'</name>
+        <articleId>3664922</articleId>
+        <brand>Review</brand>
+    </offer>
+    <offer number="24">
+        <price>ab 84,00€</price>
+        <initialPrice>ab 119,00€ ab 105,00€</initialPrice>
+        <name>Slim Fit Jeans 'Scanton'</name>
+        <articleId>3680035</articleId>
+        <brand>Tommy Jeans</brand>
+    </offer>
+    <offer number="25">
+        <price>ab 98,09€</price>
+        <initialPrice>ab 159,99€ ab 108,99€</initialPrice>
+        <name>5-Pocket-Jeans 'Newbill'</name>
+        <articleId>53659908</articleId>
+        <brand>REPLAY</brand>
+    </offer>
+    <offer number="26">
+        <price>39,95€</price>
+        <initialPrice>119,00€ 79,90€</initialPrice>
+        <name>Jeans '5622 3D Tapered COJ'</name>
+        <articleId>562233750073</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="27">
+        <price>66,43€</price>
+        <initialPrice>109,00€ 94,90€</initialPrice>
+        <name>Jeans 'Orange63 Today'</name>
+        <articleId>633680829</articleId>
+        <brand>BOSS ORANGE</brand>
+    </offer>
+    <offer number="28">
+        <price>31,92€</price>
+        <initialPrice>39,90€</initialPrice>
+        <name>Jeans</name>
+        <articleId>3731290</articleId>
+        <brand>TOM TAILOR DENIM</brand>
+    </offer>
+    <offer number="29">
+        <price>31,92€</price>
+        <initialPrice>39,90€</initialPrice>
+        <name>Jeans 'slim denim'</name>
+        <articleId>3687965</articleId>
+        <brand>EDC BY ESPRIT</brand>
+    </offer>
+    <offer number="30">
+        <price>ab 53,91€</price>
+        <initialPrice>ab 59,90€</initialPrice>
+        <name>Skinny Fit Jeans 'LIAM ORIGINAL AM 502'</name>
+        <articleId>5023640065</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="31">
+        <price>59,94€</price>
+        <initialPrice>129,00€ 99,90€</initialPrice>
+        <name>Jogg-Jeans</name>
+        <articleId>3662055</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="32">
+        <price>71,18€</price>
+        <initialPrice>94,90€</initialPrice>
+        <name>Jeans 'ZINC BLK'</name>
+        <articleId>3723816</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="33">
+        <price>79,92€</price>
+        <initialPrice>99,90€</initialPrice>
+        <name>Slimfit Denim '511'</name>
+        <articleId>5113689529</articleId>
+        <brand>LEVI'S</brand>
+    </offer>
+    <offer number="34">
+        <price>103,20€</price>
+        <initialPrice>129,00€</initialPrice>
+        <name>Skinny Fit Jeans 'Simon'</name>
+        <articleId>3666926</articleId>
+        <brand>Tommy Jeans</brand>
+    </offer>
+    <offer number="35">
+        <price>79,92€</price>
+        <initialPrice>129,00€ 99,90€</initialPrice>
+        <name>Jeans '3301 Slim'</name>
+        <articleId>33013660686</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="36">
+        <initialPrice/>
+        <name>Jeans 'WEFT MED BLUE 5076 PK'</name>
+        <articleId>50763539837</articleId>
+        <brand>Only &amp; Sons</brand>
+    </offer>
+    <offer number="37">
+        <price>111,20€</price>
+        <initialPrice>139,00€</initialPrice>
+        <name>'Sleenker' Jeans Skinny Fit 886Z</name>
+        <articleId>8863672045</articleId>
+        <brand>DIESEL</brand>
+    </offer>
+    <offer number="38">
+        <initialPrice/>
+        <name>Röhrenjeans 'Liam'</name>
+        <articleId>3424644</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="39">
+        <initialPrice/>
+        <name>Jeans Tight</name>
+        <articleId>2211967</articleId>
+        <brand>CHEAP MONDAY</brand>
+    </offer>
+    <offer number="40">
+        <price>75,00€</price>
+        <initialPrice>139,00€ 125,00€</initialPrice>
+        <name>Skinny-Jeans 'Hugo 131'</name>
+        <articleId>1313681406</articleId>
+        <brand>HUGO</brand>
+    </offer>
+    <offer number="41">
+        <initialPrice/>
+        <name>Jeans in Used-Optik 'Hatch'</name>
+        <articleId>2159835</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="42">
+        <price>119,20€</price>
+        <initialPrice>149,00€</initialPrice>
+        <name>Jeans 'Jaz'</name>
+        <articleId>3573033</articleId>
+        <brand>DRYKORN</brand>
+    </offer>
+    <offer number="43">
+        <price>71,92€</price>
+        <initialPrice>89,90€</initialPrice>
+        <name>Jeans 'Rebel Pant'</name>
+        <articleId>3576204</articleId>
+        <brand>Carhartt WIP</brand>
+    </offer>
+    <offer number="44">
+        <initialPrice/>
+        <name>Jeans</name>
+        <articleId>3359897</articleId>
+        <brand>Only &amp; Sons</brand>
+    </offer>
+    <offer number="45">
+        <price>44,95€</price>
+        <initialPrice>129,00€ 89,90€</initialPrice>
+        <name>Jeans 'ZINC DUSTED'</name>
+        <articleId>3737724</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="46">
+        <price>71,91€</price>
+        <initialPrice>119,00€ 79,90€</initialPrice>
+        <name>Jeans '3301 Straight'</name>
+        <articleId>33013708253</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="47">
+        <price>97,30€</price>
+        <initialPrice>159,00€ 139,00€</initialPrice>
+        <name>Safado' Jeans Regular Fit 885K</name>
+        <articleId>8853662152</articleId>
+        <brand>DIESEL</brand>
+    </offer>
+    <offer number="48">
+        <price>ab 41,94€</price>
+        <initialPrice>ab 79,90€ ab 69,90€</initialPrice>
+        <name>Jeans 'SHNSLIM-LEON 6104 BLACK ST JEANS'</name>
+        <articleId>61043719749</articleId>
+        <brand>SELECTED HOMME</brand>
+    </offer>
+    <offer number="49">
+        <price>ab 55,92€</price>
+        <initialPrice>ab 69,90€</initialPrice>
+        <name>Dunkle Jeans 'JJIGLENN JJDUST AM 657 STS'</name>
+        <articleId>6573730864</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="50">
+        <price>87,20€</price>
+        <initialPrice>109,00€</initialPrice>
+        <name>Skinny Jeans</name>
+        <articleId>3691450</articleId>
+        <brand>Calvin Klein Jeans</brand>
+    </offer>
+    <offer number="51">
+        <price>47,94€</price>
+        <initialPrice>99,90€ 79,90€</initialPrice>
+        <name>Jeans 'Spike'</name>
+        <articleId>3650609</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="52">
+        <price>97,30€</price>
+        <initialPrice>139,00€</initialPrice>
+        <name>Jeans 'SKINNY TAPER'</name>
+        <articleId>3746878</articleId>
+        <brand>Calvin Klein Jeans</brand>
+    </offer>
+    <offer number="53">
+        <price>55,93€</price>
+        <initialPrice>119,00€ 79,90€</initialPrice>
+        <name>Jeans '5622 3D Tapered COJ'</name>
+        <articleId>562233750100</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="54">
+        <price>143,20€</price>
+        <initialPrice>179,00€</initialPrice>
+        <name>'Tepphar' Jeans Skinny Fit 853T</name>
+        <articleId>8533685374</articleId>
+        <brand>DIESEL</brand>
+    </offer>
+    <offer number="55">
+        <price>31,92€</price>
+        <initialPrice>39,90€</initialPrice>
+        <name>Jeans 'WEFT BLACK 6946 PK'</name>
+        <articleId>69463730926</articleId>
+        <brand>Only &amp; Sons</brand>
+    </offer>
+    <offer number="56">
+        <initialPrice/>
+        <name>Jeans 'LOOM BLUE JOG PK 8472 NOOS'</name>
+        <articleId>84723774568</articleId>
+        <brand>Only &amp; Sons</brand>
+    </offer>
+    <offer number="57">
+        <price>80,50€</price>
+        <initialPrice>129,00€ 115,00€</initialPrice>
+        <name>Slim-Fit-Jeans 'Hugo 708'</name>
+        <articleId>7083697446</articleId>
+        <brand>HUGO</brand>
+    </offer>
+    <offer number="58">
+        <initialPrice/>
+        <name>Röhrenjeans 'Liam'</name>
+        <articleId>3424616</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="59">
+        <price>48,93€</price>
+        <initialPrice>69,90€</initialPrice>
+        <name>Jeans 'JOSH Regular'</name>
+        <articleId>3686330</articleId>
+        <brand>TOM TAILOR</brand>
+    </offer>
+    <offer number="60">
+        <price>119,20€</price>
+        <initialPrice>149,00€</initialPrice>
+        <name>'Tepphar' Jeans Skinny Fit 853T</name>
+        <articleId>8533431308</articleId>
+        <brand>DIESEL</brand>
+    </offer>
+    <offer number="61">
+        <price>85,41€</price>
+        <initialPrice>109,00€ 94,90€</initialPrice>
+        <name>Jeans in Used-Optik 'Hatch'</name>
+        <articleId>3712333</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="62">
+        <price>71,18€</price>
+        <initialPrice>109,00€ 94,90€</initialPrice>
+        <name>Jeans 'Skim - Jet Set'</name>
+        <articleId>3659892</articleId>
+        <brand>SCOTCH &amp; SODA</brand>
+    </offer>
+    <offer number="63">
+        <price>ab 35,92€</price>
+        <initialPrice>ab 59,90€ ab 44,90€</initialPrice>
+        <name>Slim Fit Jeans</name>
+        <articleId>3722779</articleId>
+        <brand>TOM TAILOR DENIM</brand>
+    </offer>
+    <offer number="64">
+        <price>34,95€</price>
+        <initialPrice>69,90€</initialPrice>
+        <name>Slim Fit Jeans 'JJIGLENN JJORIGINAL GE 988 NOOS'</name>
+        <articleId>9883548643</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="65">
+        <price>59,93€</price>
+        <initialPrice>79,90€</initialPrice>
+        <name>Jeans in Used-Optik 'Hatch'</name>
+        <articleId>3636741</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="66">
+        <price>93,75€</price>
+        <initialPrice>139,00€ 125,00€</initialPrice>
+        <name>Jeans 'Jaz'</name>
+        <articleId>3686897</articleId>
+        <brand>DRYKORN</brand>
+    </offer>
+    <offer number="67">
+        <price>62,91€</price>
+        <initialPrice>99,90€ 69,90€</initialPrice>
+        <name>Jeans 'HATCH'</name>
+        <articleId>3712254</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="68">
+        <price>ab 37,43€</price>
+        <initialPrice>ab 49,90€</initialPrice>
+        <name>Jeans 'Loom'</name>
+        <articleId>3434057</articleId>
+        <brand>Only &amp; Sons</brand>
+    </offer>
+    <offer number="69">
+        <price>ab 84,00€</price>
+        <initialPrice>ab 119,00€ ab 105,00€</initialPrice>
+        <name>Jeans '3301 Straight'</name>
+        <articleId>33013643526</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="70">
+        <price>52,43€</price>
+        <initialPrice>69,90€</initialPrice>
+        <name>Jeans 'Denim Marvin Straight'</name>
+        <articleId>3706077</articleId>
+        <brand>TOM TAILOR</brand>
+    </offer>
+    <offer number="71">
+        <price>79,92€</price>
+        <initialPrice>99,90€</initialPrice>
+        <name>Jeans in Used-Optik 'Hatch'</name>
+        <articleId>3672011</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="72">
+        <price>35,94€</price>
+        <initialPrice>69,90€ 59,90€</initialPrice>
+        <name>Jeans 'PIERS'</name>
+        <articleId>3722757</articleId>
+        <brand>TOM TAILOR DENIM</brand>
+    </offer>
+    <offer number="73">
+        <price>47,92€</price>
+        <initialPrice>59,90€</initialPrice>
+        <name>'Hyperstretch Denim JOSH Regular' Jeans</name>
+        <articleId>3677807</articleId>
+        <brand>TOM TAILOR</brand>
+    </offer>
+    <offer number="74">
+        <price>62,99€</price>
+        <initialPrice>69,99€</initialPrice>
+        <name>Denim Curt Tapered</name>
+        <articleId>3754411</articleId>
+        <brand>TOM TAILOR</brand>
+    </offer>
+    <offer number="75">
+        <price>27,93€</price>
+        <initialPrice>39,90€</initialPrice>
+        <name>Jeans 'SKINNY LIGHTBLUE'</name>
+        <articleId>3707755</articleId>
+        <brand>Review</brand>
+    </offer>
+    <offer number="76">
+        <price>35,94€</price>
+        <initialPrice>69,90€ 59,90€</initialPrice>
+        <name>Jeans 'Joshua'</name>
+        <articleId>3680022</articleId>
+        <brand>LTB</brand>
+    </offer>
+    <offer number="77">
+        <initialPrice/>
+        <name>Röhrenjeans 'Liam'</name>
+        <articleId>3424682</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="78">
+        <price>111,20€</price>
+        <initialPrice>139,00€</initialPrice>
+        <name>Skinny Jeans 'Morten'</name>
+        <articleId>3686140</articleId>
+        <brand>tigha</brand>
+    </offer>
+    <offer number="79">
+        <price>87,50€</price>
+        <initialPrice>139,00€ 125,00€</initialPrice>
+        <name>Skinny-Fit-Jeans 'Hugo 734'</name>
+        <articleId>7343680684</articleId>
+        <brand>HUGO</brand>
+    </offer>
+    <offer number="80">
+        <price>56,18€</price>
+        <initialPrice>109,00€ 74,90€</initialPrice>
+        <name>Slim Fit Jeans</name>
+        <articleId>3676418</articleId>
+        <brand>Calvin Klein Jeans</brand>
+    </offer>
+    <offer number="81">
+        <price>ab 53,94€</price>
+        <initialPrice>ab 99,90€ ab 89,90€</initialPrice>
+        <name>5-Pocket-Jeans 'Newbill'</name>
+        <articleId>53659910</articleId>
+        <brand>REPLAY</brand>
+    </offer>
+    <offer number="82">
+        <price>79,92€</price>
+        <initialPrice>99,90€</initialPrice>
+        <name>Jeans 'Robin'</name>
+        <articleId>2160265</articleId>
+        <brand>tigha</brand>
+    </offer>
+    <offer number="83">
+        <price>ab 75,00€</price>
+        <initialPrice>ab 139,00€ ab 125,00€</initialPrice>
+        <name>'Anbass' Jeans im Used-Style</name>
+        <articleId>3666358</articleId>
+        <brand>REPLAY</brand>
+    </offer>
+    <offer number="84">
+        <price>64,50€</price>
+        <initialPrice>129,00€</initialPrice>
+        <name>Jeans '3301 Deconstructed Slim COJ'</name>
+        <articleId>33013700124</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="85">
+        <price>119,20€</price>
+        <initialPrice>149,00€</initialPrice>
+        <name>Jeans 'Belther'</name>
+        <articleId>3693359</articleId>
+        <brand>DIESEL</brand>
+    </offer>
+    <offer number="86">
+        <price>ab 44,93€</price>
+        <initialPrice>ab 59,90€</initialPrice>
+        <name>Jeans 'JJICLARK JJORIGINAL GE 255 NOOS'</name>
+        <articleId>2553677218</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="87">
+        <price>75,92€</price>
+        <initialPrice>119,00€ 94,90€</initialPrice>
+        <name>Jeans '3301 Slim'</name>
+        <articleId>33013543329</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="88">
+        <initialPrice/>
+        <name>Jeans 'JJGlenn Original JJ 887'</name>
+        <articleId>8873418020</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="89">
+        <price>95,40€</price>
+        <initialPrice>159,00€</initialPrice>
+        <name>Jeans in Slim Fit 'Arc 3D'</name>
+        <articleId>33637387</articleId>
+        <brand>G-STAR RAW</brand>
+    </offer>
+    <offer number="90">
+        <price>104,30€</price>
+        <initialPrice>149,00€</initialPrice>
+        <name>Tapered fit Jeans 'Orange90-P'</name>
+        <articleId>903717798</articleId>
+        <brand>BOSS ORANGE</brand>
+    </offer>
+    <offer number="91">
+        <price>24,95€</price>
+        <initialPrice>59,00€ 49,90€</initialPrice>
+        <name>Jeans 'STRAIGHT detail'</name>
+        <articleId>3749847</articleId>
+        <brand>EDC BY ESPRIT</brand>
+    </offer>
+    <offer number="92">
+        <price>ab 62,93€</price>
+        <initialPrice>ab 89,90€</initialPrice>
+        <name>Jeans 'JJITIM JJORIGINAL JJ 925 NOOS'</name>
+        <articleId>9252222771</articleId>
+        <brand>JACK &amp; JONES</brand>
+    </offer>
+    <offer number="93">
+        <price>48,99€</price>
+        <initialPrice>69,99€</initialPrice>
+        <name>Denim Josh Regular Slim Jeans</name>
+        <articleId>3776318</articleId>
+        <brand>TOM TAILOR</brand>
+    </offer>
+    <offer number="94">
+        <price>80,50€</price>
+        <initialPrice>129,00€ 115,00€</initialPrice>
+        <name>Jeans 'Lean Dean'</name>
+        <articleId>3669754</articleId>
+        <brand>Nudie Jeans Co</brand>
+    </offer>
+    <offer number="95">
+        <price>23,92€</price>
+        <initialPrice>29,90€</initialPrice>
+        <name>Skinny Jeans</name>
+        <articleId>3649961</articleId>
+        <brand>Only &amp; Sons</brand>
+    </offer>
+    <offer number="96">
+        <price>ab 115,49€</price>
+        <initialPrice>ab 164,99€</initialPrice>
+        <name>'Anbass' Jeans im Used-Style</name>
+        <articleId>3666355</articleId>
+        <brand>REPLAY</brand>
+    </offer>
+    <offer number="97">
+        <price>47,94€</price>
+        <initialPrice>99,90€ 79,90€</initialPrice>
+        <name>Jeans 'Cash'</name>
+        <articleId>3650606</articleId>
+        <brand>Pepe Jeans</brand>
+    </offer>
+    <offer number="98">
+        <price>73,50€</price>
+        <initialPrice>119,00€ 105,00€</initialPrice>
+        <name>Jeans 'Orange 90 First'</name>
+        <articleId>903632551</articleId>
+        <brand>BOSS ORANGE</brand>
+    </offer>
+</offers>
