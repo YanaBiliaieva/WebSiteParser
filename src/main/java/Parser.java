@@ -6,66 +6,19 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.*;
 
-public class Main {
-    private static String startUrl = "https://www.aboutyou.de/Search/Default/find?term=";
-    private static String frauenUrl = "https://www.aboutyou.de/frauen/bekleidung/";
-    private static String mannerUrl = "https://www.aboutyou.de/maenner/bekleidung/";
-    private static String kinderUrl = "https://www.aboutyou.de/kinder/maedchen/kids-gr-92-140/";
-    private static String wrapperClassName = "anchor_wgmchy";
-    private static String brandClassName = "brand_ke66rm";
-    private static String itemNameClassName = "name_1iurgbx";
-    private static String itemPriceClassName = "price_1543wg1-o_O-highlight_1t1mqn4";
-    private static String initialPriceClassName = "price_codx7m-o_O-strikeOut_32pxry";
-    private static String linkClassName = "imageContainer_11g402i-o_O-imageContainerWithPadding_dxtwdx";
-    private static String pagesClassName = "pageNumbers_ffrt32";
-    public static Document docMan = null;
-    public static String searchKeyword = null;
-    private static String pagesSymbols = "?page=";
-    public static String manClothesSearch;
-    public static String ladyClothesSearch;
-    public static String kinderClothesSearch;
-    public static Document docLady = null;
-    public static Document docKinder = null;
-    public static Integer requestsAmount = 0;
-    public static XmlCreator creator;
-
-    public static void main(String[] args) {
-        //start counting runtime
-        final long startTime = System.nanoTime();
-        //start counting memory
-        long beforeUsedMem = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-        // searchKeyword = args[0];
-        searchKeyword = "jeans";
-        manClothesSearch = mannerUrl + searchKeyword;
-        ladyClothesSearch = frauenUrl + searchKeyword;
-        kinderClothesSearch = kinderUrl + searchKeyword;
-        try {
-            parseWebSite();
-        } catch (Exception e) {
-            System.out.println("Cannot parse website");
-        }
-        System.out.println("");
-        System.out.println("Summary:");
-        System.out.println("Amount of triggered HTTP request = " + requestsAmount);
-        System.out.println("Amount of extracted products = " + (creator.getXmlOfferCount()-1));
-        final long duration = System.nanoTime() - startTime;
-        //Date myTime = new Date(duration / 1000);//in seconds
-        System.out.println("Run-time (nanoTime): " + duration);
-        long afterUsedMem = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-        long actualMemUsed = afterUsedMem - beforeUsedMem;
-        System.out.println("Memory Footprint:" + actualMemUsed);
-    }
+public class Parser {
+    private Integer requestsAmount = 0;
 
     /**
      * calls functions which get and parse Document, count number of search result pages in three categories: man, ladies, kinder;
      * calls functions which extract offers and its attributes in the categories;
      * calls XmlCreator to create XML file
      */
-    public static void parseWebSite() {
+    public void parseWebSite(String manClothesSearch, String ladyClothesSearch, String kinderClothesSearch) {
 
-        docMan = getAndParse(manClothesSearch);
-        docLady = getAndParse(ladyClothesSearch);
-        docKinder = getAndParse(kinderClothesSearch);
+        Document docMan = getAndParse(manClothesSearch);
+        Document docLady = getAndParse(ladyClothesSearch);
+        Document docKinder = getAndParse(kinderClothesSearch);
 
         Integer numberOfPagesMan = getPageNumbers(docMan);
         Integer numberOfPagesLady = getPageNumbers(docLady);
@@ -81,9 +34,17 @@ public class Main {
         allWebsiteOffers.addAll(kinderOffers);
 
         //save results to xml
-        creator = new XmlCreator();
+        XmlCreator creator = new XmlCreator();
         creator.createXml(allWebsiteOffers);
 
+        System.out.println("Summary:");
+        System.out.println("Amount of triggered HTTP request = " + requestsAmount);
+        System.out.println("Amount of extracted products = " + creator.getXmlOfferCount());
+        final long duration = System.nanoTime() - App.startTime;
+        System.out.println("Run-time (nanoTime): " + duration);
+        long afterUsedMem = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+        long actualMemUsed = afterUsedMem - App.beforeUsedMem;
+        System.out.println("Memory Footprint:" + actualMemUsed);
     }
 
     /**
@@ -92,7 +53,7 @@ public class Main {
      * @param searchUrl
      * @param numberOfPages
      */
-    public static HashSet<Map<String, String>> getAllOffersInCategory(String searchUrl, Integer numberOfPages, Document firstPage) {
+    public HashSet<Map<String, String>> getAllOffersInCategory(String searchUrl, Integer numberOfPages, Document firstPage) {
 
         HashSet<Map<String, String>> offersPageOne = getProperties(firstPage);
         HashSet<Map<String, String>> offersPages = new HashSet<Map<String, String>>();
@@ -116,7 +77,7 @@ public class Main {
      * @param pageUrl
      * @return parsedDocFromUrl
      */
-    public static Document getAndParse(String pageUrl) {
+    public Document getAndParse(String pageUrl) {
         Document parsedDocFromUrl = null;
         try {
             parsedDocFromUrl = Jsoup.connect(pageUrl).get();
@@ -126,7 +87,6 @@ public class Main {
         }
         parsedDocFromUrl = Jsoup.parse(parsedDocFromUrl.html());
         return parsedDocFromUrl;
-
     }
 
     /**
@@ -135,7 +95,8 @@ public class Main {
      * @param document
      * @return value
      */
-    public static Integer getPageNumbers(Document document) {
+    public Integer getPageNumbers(Document document) {
+        String pagesClassName = "pageNumbers_ffrt32";
         Elements pages = document.getElementsByClass(pagesClassName);
         List<Integer> integers = new ArrayList<Integer>();
         for (Element element : pages) {
@@ -158,29 +119,34 @@ public class Main {
      * @param doc
      * @return strings
      */
-    public static HashSet<Map<String, String>> getProperties(Document doc) {
+    public HashSet<Map<String, String>> getProperties(Document doc) {
         HashSet<Map<String, String>> strings = new HashSet<Map<String, String>>();
+        String wrapperClassName = "anchor_wgmchy";
         Elements thisItemPrice = doc.getElementsByClass(wrapperClassName);
 
         for (Element el : thisItemPrice) {
             Map<String, String> offer = new HashMap<String, String>();
 
+            String itemNameClassName = "name_1iurgbx";
             Elements nameEl = el.getElementsByClass(itemNameClassName);
             if (!nameEl.toString().isEmpty()) {
                 for (Element cont : nameEl) {
                     String text = cont.text();
                     offer.put("name", text);
                 }
+                String brandClassName = "brand_ke66rm";
                 Elements brandEl = el.getElementsByClass(brandClassName);
                 for (Element cont : brandEl) {
                     String text = cont.text();
                     offer.put("brand", text);
                 }
+                String itemPriceClassName = "price_1543wg1-o_O-highlight_1t1mqn4";
                 Elements itemPriceEl = el.getElementsByClass(itemPriceClassName);
                 for (Element cont : itemPriceEl) {
                     String text = cont.text();
                     offer.put("price", text);
                 }
+                String initialPriceClassName = "price_codx7m-o_O-strikeOut_32pxry";
                 Elements initialPriceEl = el.getElementsByClass(initialPriceClassName);
 
                 for (int i = 0; i < 2; i++) {
@@ -195,5 +161,4 @@ public class Main {
         }
         return strings;
     }
-
 }
