@@ -19,10 +19,17 @@ import java.util.List;
 import java.util.Map;
 
 public class XmlCreator {
+    private final String filePath="src\\main\\resources\\output.xml";
+    private Integer xmlOfferCount=0;
+
+    /**
+     * using DocumentBuilderFactory creates XML file with attributes: number, price,initialPrice,name,articleId,brand
+     * saves results to output.xml
+     * @param elements
+     */
     public void createXml(HashSet<Map<String, String>> elements) {
         try {
-            DocumentBuilderFactory dbFactory =
-                    DocumentBuilderFactory.newInstance();
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = null;
             try {
                 dBuilder = dbFactory.newDocumentBuilder();
@@ -40,11 +47,9 @@ public class XmlCreator {
             String price = null;
             String initialPrice = null;
             String articleId = null;
-            int i = 0;
             while (iterator.hasNext()) {
                 Map<String, String> offer = (Map<String, String>) iterator.next();
-                number = String.valueOf(i++);
-                System.out.println(number);
+                number = String.valueOf(xmlOfferCount++);
                 // offers element
                 Element offerEl = doc.createElement("offer");
                 rootElement.appendChild(offerEl);
@@ -53,7 +58,6 @@ public class XmlCreator {
                 attr.setValue(number);//iterator
                 offerEl.setAttributeNode(attr);
                 for (Map.Entry<String, String> entry : offer.entrySet()) {
-                    System.out.println(entry.getKey() + "/" + entry.getValue());
                     if (entry.getKey().equals("name")) {
 
                         if ((entry.getValue()) != null) {
@@ -117,7 +121,7 @@ public class XmlCreator {
                 e1.printStackTrace();
             }
             DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File("src\\main\\resources\\output.xml"));
+            StreamResult result = new StreamResult(new File(filePath));
             try {
                 transformer.transform(source, result);
             } catch (TransformerException e1) {
@@ -134,6 +138,13 @@ public class XmlCreator {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    public Integer getXmlOfferCount() {
+        return xmlOfferCount;
+    }
+
+    public void setXmlOfferCount(Integer xmlOfferCount) {
+        this.xmlOfferCount = xmlOfferCount;
     }
 
 }
