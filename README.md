@@ -1,6 +1,6 @@
 # Web Shop Parser  
 
-Using ~$ java -jar WebSiteParser.jar jeans  
+Using java -cp WebSiteParser-1.0-SNAPSHOT-jar-with-dependencies.jar App jeans  
 The expected result is the following.  
 An example of the console output:  
 Summary:  
