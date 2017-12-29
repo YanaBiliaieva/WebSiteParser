@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.util.*;
 
 public class Parser {
-    private Integer requestsAmount = 0;
+    private volatile Integer requestsAmount = 0;
+    private volatile HashSet<Map<String, String>> offersPages;
 
     /**
      * calls functions which get and parse Document, count number of search result pages in three categories: man, ladies, kinder;
@@ -47,6 +48,22 @@ public class Parser {
         System.out.println("Memory Footprint:" + actualMemUsed);
     }
 
+    class MyThread extends Thread {
+        volatile String pageUrl;
+
+        public MyThread(String pageUrl) {
+            this.pageUrl = pageUrl;
+        }
+
+        @Override
+        public void run() {
+            Document document = getAndParse(pageUrl);
+            //get needed offer' attributes
+            HashSet<Map<String, String>> offersPage = getProperties(document);
+            offersPages.addAll(offersPage);
+        }
+    }
+
     /**
      * go through each page
      *
@@ -54,16 +71,19 @@ public class Parser {
      * @param numberOfPages
      */
     public HashSet<Map<String, String>> getAllOffersInCategory(String searchUrl, Integer numberOfPages, Document firstPage) {
-
         HashSet<Map<String, String>> offersPageOne = getProperties(firstPage);
-        HashSet<Map<String, String>> offersPages = new HashSet<Map<String, String>>();
+        offersPages = new HashSet<Map<String, String>>();
         if (numberOfPages != null) {
             for (int i = 2; i <= numberOfPages; i++) {
                 String pageUrl = searchUrl + "?page=" + i;
-                Document document = getAndParse(pageUrl);
-                //get needed offer' attributes
-                HashSet<Map<String, String>> offersPage = getProperties(document);
-                offersPages.addAll(offersPage);
+                MyThread temp = new MyThread(pageUrl);
+                temp.start();
+                try {
+                    temp.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
             }
         }
         offersPages.addAll(offersPageOne);
@@ -77,7 +97,7 @@ public class Parser {
      * @param pageUrl
      * @return parsedDocFromUrl
      */
-    public Document getAndParse(String pageUrl) {
+    public synchronized Document getAndParse(String pageUrl) {
         Document parsedDocFromUrl = null;
         try {
             parsedDocFromUrl = Jsoup.connect(pageUrl).get();
@@ -119,7 +139,7 @@ public class Parser {
      * @param doc
      * @return strings
      */
-    public HashSet<Map<String, String>> getProperties(Document doc) {
+    public synchronized HashSet<Map<String, String>> getProperties(Document doc) {
         HashSet<Map<String, String>> strings = new HashSet<Map<String, String>>();
         String wrapperClassName = "anchor_wgmchy";
         Elements thisItemPrice = doc.getElementsByClass(wrapperClassName);
