@@ -18,7 +18,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 class XmlCreator {
-    private final String filePath = "src\\main\\resources\\output.xml";
+    private final String filePath = "output.xml";
     private Integer xmlOfferCount = 0;
 
     /**

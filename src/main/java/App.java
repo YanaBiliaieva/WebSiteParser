@@ -11,17 +11,18 @@ public class App {
         startTime = System.nanoTime();
         //start counting memory
         beforeUsedMem = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-        // searchKeyword = args[0];
-        String searchKeyword = "jeans";
-        String manClothesSearch = mannerUrl + searchKeyword;
-        String ladyClothesSearch = frauenUrl + searchKeyword;
-        String kinderClothesSearch = kinderUrl + searchKeyword;
-        try {
-            Parser parser = new Parser();
-            parser.parseWebSite(manClothesSearch, ladyClothesSearch, kinderClothesSearch);
-        } catch (Exception e) {
-            System.out.println("Cannot parse website");
-        }
-
+        String searchKeyword=null;
+        if(!args[0].isEmpty()){
+            searchKeyword = args[0];
+            String manClothesSearch = mannerUrl + searchKeyword;
+            String ladyClothesSearch = frauenUrl + searchKeyword;
+            String kinderClothesSearch = kinderUrl + searchKeyword;
+            try {
+                Parser parser = new Parser();
+                parser.parseWebSite(manClothesSearch, ladyClothesSearch, kinderClothesSearch);
+            } catch (Exception e) {
+                System.out.println("Cannot parse website");
+            }
+        }else System.out.println("Empty string!");
     }
 }
